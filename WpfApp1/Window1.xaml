@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="McDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Center" VerticalAlignment="Center" Height="414" Width="778" Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" BorderBrush="Gray" BorderThickness="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID Producto" Width="70" Binding="{Binding IdProducto}" />
+                <DataGridTextColumn Header="Nombre Producto" Width="100" Binding="{Binding NombreProducto}" />
+                <DataGridTextColumn Header="ID Proveedor" Width="50" Binding="{Binding IdProveedor}" />
+                <DataGridTextColumn Header="ID Categoría" Width="50" Binding="{Binding IdCategoria}" />
+                <DataGridTextColumn Header="Cantidad por Unidad" Width="70" Binding="{Binding CantidadPorUnidad}" />
+                <DataGridTextColumn Header="Precio por Unidad" Width="50" Binding="{Binding PrecioUnidad}" />
+                <DataGridTextColumn Header="Unidades en Existencia" Width="70" Binding="{Binding UnidadesEnExistencia}" />
+                <DataGridTextColumn Header="Unidades en Pedido" Width="70" Binding="{Binding UnidadesEnPedido}" />
+                <DataGridTextColumn Header="Nivel Nuevo Pedido" Width="70" Binding="{Binding NivelNuevoPedido}" />
+                <DataGridTextColumn Header="Suspendido" Width="70" Binding="{Binding Suspendido}" />
+                <DataGridTextColumn Header="Categoría del Producto" Width="100" Binding="{Binding CategoriaProducto}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+
+</Window>
